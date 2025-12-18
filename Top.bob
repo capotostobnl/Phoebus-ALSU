@@ -969,7 +969,7 @@
     <actions>
       <action type="open_display">
         <description>Open Display</description>
-        <file>../../epics/iocs/zpsc_ioc/gui/DCCT Viewer.bob</file>
+        <file>../../epics/iocs/zpsc_ioc/gui/DCCT Viewer_Unipolar.bob</file>
         <macros>
           <PriSys>lab</PriSys>
           <PSC>5</PSC>
@@ -994,7 +994,7 @@
     <actions>
       <action type="open_display">
         <description>Open Display</description>
-        <file>../../epics/iocs/zpsc_ioc/gui/DCCT Viewer.bob</file>
+        <file>../../epics/iocs/zpsc_ioc/gui/DCCT Viewer_Unipolar.bob</file>
         <macros>
           <PriSys>lab</PriSys>
           <PSC>4</PSC>
@@ -1088,5 +1088,71 @@
     </font>
     <tooltip>$(actions)</tooltip>
     <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Launch PDU #1</name>
+    <actions>
+      <action type="open_display">
+        <description>Open Display</description>
+        <file>../../epics/iocs/pdu-ioc/opi/PDU.bob</file>
+        <macros>
+          <P>PDU</P>
+          <N>1</N>
+        </macros>
+        <target>tab</target>
+      </action>
+    </actions>
+    <text>Launch PDU #1</text>
+    <x>66</x>
+    <y>348</y>
+    <width>116</width>
+    <height>25</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>IP Address: 10.69.26.200</text>
+    <x>200</x>
+    <y>348</y>
+    <width>168</width>
+    <height>25</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Launch PDU #2</name>
+    <actions>
+      <action type="open_display">
+        <description>Open Display</description>
+        <file>../../epics/iocs/pdu-ioc/opi/PDU.bob</file>
+        <macros>
+          <P>PDU</P>
+          <N>2</N>
+        </macros>
+        <target>tab</target>
+      </action>
+    </actions>
+    <text>Launch PDU #2</text>
+    <x>66</x>
+    <y>384</y>
+    <width>116</width>
+    <height>25</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>IP Address: 10.69.26.201</text>
+    <x>200</x>
+    <y>384</y>
+    <width>168</width>
+    <height>25</height>
+    <vertical_alignment>1</vertical_alignment>
   </widget>
 </display>
